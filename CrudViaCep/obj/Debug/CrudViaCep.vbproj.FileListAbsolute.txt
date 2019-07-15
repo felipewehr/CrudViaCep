@@ -1,0 +1,13 @@
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\bin\Debug\CrudViaCep.exe.config
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\bin\Debug\CrudViaCep.exe
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\bin\Debug\CrudViaCep.pdb
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\bin\Debug\CrudViaCep.xml
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\obj\Debug\CrudViaCep.vbprojAssemblyReference.cache
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\obj\Debug\CrudViaCep.Cadastro.resources
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\obj\Debug\CrudViaCep.Listagem.resources
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\obj\Debug\CrudViaCep.Resources.resources
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\obj\Debug\CrudViaCep.vbproj.GenerateResource.cache
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\obj\Debug\CrudViaCep.vbproj.CoreCompileInputs.cache
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\obj\Debug\CrudViaCep.exe
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\obj\Debug\CrudViaCep.xml
+C:\Users\Felipe.wehrmann\source\repos\CrudViaCep\CrudViaCep\obj\Debug\CrudViaCep.pdb
