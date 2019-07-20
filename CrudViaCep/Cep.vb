@@ -1,13 +1,14 @@
 ﻿Public Class Cep
 
-    Dim Cep As String = String.Empty
-    Dim Logradouro As String = String.Empty
-    Dim Complemento As String = String.Empty
-    Dim Bairro As String = String.Empty
-    Dim Localidade As String = String.Empty
-    Dim Uf As String = String.Empty
-    Dim Unidade As String = String.Empty
-    Dim Ibge As String = String.Empty
-    Dim Gia As String = String.Empty
+    Public CepId As Integer = 0
+    Public Cep As String = String.Empty
+    Public Logradouro As String = String.Empty
+    Public Complemento As String = String.Empty
+    Public Bairro As String = String.Empty
+    Public Localidade As String = String.Empty
+    Public Estado As String = String.Empty
+    Public Unidade As String = String.Empty
+    Public Ibge As String = String.Empty
+    Public Gia As String = String.Empty
 
 End Class
