@@ -1,4 +1,7 @@
 ﻿Public Class Cadastro
+
+    Public CepId As Integer = 0
+
     Private Sub Cadastro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
