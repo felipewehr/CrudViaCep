@@ -2,7 +2,7 @@
 
 Public Class ApiViaCep
 
-    Private Function GetViaCep(ByVal iCEP As String, ByVal opcao As Integer) As String
+    Public Function GetViaCep(ByVal iCEP As String, ByVal opcao As Integer) As String
 
         Dim RetornoXML As String = Nothing
         Dim request As System.Net.HttpWebRequest = CType(Net.WebRequest.Create("https://viacep.com.br/ws/" & iCEP & "/xml/"), Net.HttpWebRequest)
