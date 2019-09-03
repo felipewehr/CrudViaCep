@@ -20,7 +20,7 @@
 
         If ListCep.SelectedItems.Count = 1 Then
             Dim cadastro As New Cadastro
-            cadastro.CepId = Integer.Parse(ListCep.Items(index).Text)
+            cadastro.CepId = ListCep.Items(index).SubItems(0).Text
             cadastro.txtCep.Text = ListCep.Items(index).SubItems(1).Text
             cadastro.txtLogradouro.Text = ListCep.Items(index).SubItems(2).Text
             cadastro.txtComplemento.Text = ListCep.Items(index).SubItems(3).Text

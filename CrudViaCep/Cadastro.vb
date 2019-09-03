@@ -1,6 +1,6 @@
 ﻿Public Class Cadastro
 
-    Public CepId As Integer = 0
+    Public CepId As Integer
     Dim conexao As New ConexaoDB
 
     Private Sub Cadastro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -18,7 +18,7 @@
     Private Sub btnBuscarCep_Click(sender As Object, e As EventArgs) Handles btnBuscarCep.Click
 
         Dim cep As String = txtCep.Text
-        Dim viaCep As New ApiViaCep()
+        Dim viaCep As New ApiViaCep
 
         txtLogradouro.Text = viaCep.GetViaCep(cep, 1)
         txtBairro.Text = viaCep.GetViaCep(cep, 2)
@@ -52,6 +52,7 @@
     Private Function FormToCep() As Cep
 
         Dim cep As New Cep
+        cep.CepId = CepId
         cep.Bairro = txtBairro.Text
         cep.Cep = txtCep.Text
         cep.Complemento = txtComplemento.Text

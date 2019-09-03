@@ -30,7 +30,18 @@ Public Class ConexaoDB
 
     Public Sub EditarCep(ByVal cep As Cep)
 
-        strInstrucao = "UPDATE Cep SET Cep = @Cep, Logradouro = @Logradouro, Complemento = @Complemento, Bairro = @Bairro, Localidade = @Localidade, Estado = @Estado, Unidade = @Unidade, Ibge = @Ibge, Gia = @Gia WHERE CepId = @CepId"
+        strInstrucao = "UPDATE [dbo].[Cep]
+                        SET [Cep] = @Cep
+                          ,[Logradouro] = @Logradouro
+                          ,[Complemento] = @Complemento
+                          ,[Bairro] = @Bairro
+                          ,[Localidade] = @Localidade
+                          ,[Estado] = @Estado
+                          ,[Unidade] = @Unidade
+                          ,[Ibge] = @Ibge
+                          ,[Gia] = @Gia
+                        WHERE [CepId] = @CepId"
+
         objCommand.CommandText = strInstrucao
         objCommand.Connection = objConexao
         objCommand.Parameters.AddWithValue("@Cep", cep.Cep)
@@ -57,13 +68,17 @@ Public Class ConexaoDB
         objCommand.Connection = objConexao
         objCommand.Parameters.AddWithValue("@CepId", cepId)
 
+        objConexao.Open()
+        objCommand.ExecuteNonQuery()
+        objConexao.Close()
+
     End Sub
 
     Public Function BuscarCep() As DataTable
 
         Dim dt As New DataTable
         Dim ds As New DataSet()
-        strInstrucao = "SELECT CepId, Logradouro, Complemento, Bairro, Localidade, Estado, Unidade, Ibge, Gia FROM Cep"
+        strInstrucao = "SELECT CepId, Cep, Logradouro, Complemento, Bairro, Localidade, Estado, Unidade, Ibge, Gia FROM Cep"
         objCommand.CommandText = strInstrucao
         objCommand.Connection = objConexao
 

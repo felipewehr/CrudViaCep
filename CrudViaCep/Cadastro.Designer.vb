@@ -23,7 +23,6 @@ Partial Class Cadastro
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblCep = New System.Windows.Forms.Label()
-        Me.txtCep = New System.Windows.Forms.TextBox()
         Me.btnBuscarCep = New System.Windows.Forms.Button()
         Me.lblLogradouro = New System.Windows.Forms.Label()
         Me.txtLogradouro = New System.Windows.Forms.TextBox()
@@ -43,6 +42,7 @@ Partial Class Cadastro
         Me.txtComplemento = New System.Windows.Forms.TextBox()
         Me.btnSalvar = New System.Windows.Forms.Button()
         Me.btnExcluir = New System.Windows.Forms.Button()
+        Me.txtCep = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblCep
@@ -53,13 +53,6 @@ Partial Class Cadastro
         Me.lblCep.Size = New System.Drawing.Size(28, 13)
         Me.lblCep.TabIndex = 0
         Me.lblCep.Text = "CEP"
-        '
-        'txtCep
-        '
-        Me.txtCep.Location = New System.Drawing.Point(84, 12)
-        Me.txtCep.Name = "txtCep"
-        Me.txtCep.Size = New System.Drawing.Size(100, 20)
-        Me.txtCep.TabIndex = 0
         '
         'btnBuscarCep
         '
@@ -216,11 +209,19 @@ Partial Class Cadastro
         Me.btnExcluir.Text = "Excluir"
         Me.btnExcluir.UseVisualStyleBackColor = True
         '
+        'txtCep
+        '
+        Me.txtCep.Location = New System.Drawing.Point(84, 12)
+        Me.txtCep.Name = "txtCep"
+        Me.txtCep.Size = New System.Drawing.Size(100, 20)
+        Me.txtCep.TabIndex = 12
+        '
         'Cadastro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(402, 277)
+        Me.Controls.Add(Me.txtCep)
         Me.Controls.Add(Me.btnExcluir)
         Me.Controls.Add(Me.btnSalvar)
         Me.Controls.Add(Me.btnBuscarCep)
@@ -240,7 +241,6 @@ Partial Class Cadastro
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtLogradouro)
         Me.Controls.Add(Me.lblLogradouro)
-        Me.Controls.Add(Me.txtCep)
         Me.Controls.Add(Me.lblCep)
         Me.MaximizeBox = False
         Me.Name = "Cadastro"
@@ -252,7 +252,6 @@ Partial Class Cadastro
     End Sub
 
     Friend WithEvents lblCep As Label
-    Public WithEvents txtCep As TextBox
     Friend WithEvents btnBuscarCep As Button
     Friend WithEvents lblLogradouro As Label
     Public WithEvents txtLogradouro As TextBox
@@ -272,4 +271,5 @@ Partial Class Cadastro
     Public WithEvents txtComplemento As TextBox
     Friend WithEvents btnSalvar As Button
     Friend WithEvents btnExcluir As Button
+    Friend WithEvents txtCep As TextBox
 End Class
